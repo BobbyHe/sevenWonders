@@ -1,5 +1,7 @@
-extends layout
+doctype html
 
-block content
-  h1= title
-  p Welcome to #{title}
+h1 Welcome to Seven Wonders online
+
+form#userName(action='/login')
+    input(type='text', placeholder='Enter a name', name='userName')
+    input(type='submit', value='Join Game')

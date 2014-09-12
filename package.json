@@ -14,6 +14,15 @@
     "debug": "~1.0.4",
     "jade": "~1.5.0",
     "lodash": "~2.4",
-    "express.io": "*"
+    "express.io": "*"  
+  },
+  "devDependencies": {
+    "jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-open": "~0.2.0",
+    "open": "*",
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-express-server": "~0.4.5",
+    "grunt-contrib-jshint": "*"
   }
 }

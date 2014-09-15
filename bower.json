@@ -1,0 +1,7 @@
+{
+    "name": "Seven Wonders",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": "*"
+    }
+}

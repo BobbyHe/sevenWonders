@@ -1,3 +1,5 @@
+'ust strict';
+
 var path = require('path');
 // var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -21,11 +23,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'bower_commponents')));
 
 app.use(app.router);
-
-
-
 
 
 // Add routes

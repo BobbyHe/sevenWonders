@@ -1,4 +1,4 @@
-'use strict';
+'ust strict';
 
 module.exports = function (app) {
     app.get('/login', function (req, res) {

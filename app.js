@@ -1,4 +1,5 @@
-'ust strict';
+/*jslint node: true */
+'use strict';
 
 var path = require('path');
 // var favicon = require('serve-favicon');

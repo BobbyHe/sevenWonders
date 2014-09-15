@@ -1,4 +1,5 @@
-'ust strict';
+/*jslint node: true */
+'use strict';
 
 module.exports = function (app) {
     app.get('/login', function (req, res) {

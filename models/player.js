@@ -1,6 +1,7 @@
+/*jslint node: true */
 'use strict';
 
-Player = function (name) {
+var Player = function (name) {
 	this.name 	= name;
 	this.gold 	= 6;
 	this.army 	= 0;

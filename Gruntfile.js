@@ -1,4 +1,4 @@
-'ust strict';
+'use strict';
 
 module.exports = function(grunt) {
 
@@ -9,7 +9,14 @@ module.exports = function(grunt) {
 
         jshint: {
             // define the files to lint
-            files: ['gruntfile.js', 'src/public/javascript/*.js', 'test/**/*.js', 'routes/', 'app.js'],
+            files: [
+                'gruntfile.js', 
+                'src/public/javascript/*.js', 
+                'test/**/*.js', 
+                'routes/',
+                'models', 
+                'app.js'
+            ],
             // configure JSHint (documented at http://www.jshint.com/docs/)
             options: {
             // more options here if you want to override JSHint defaults
@@ -17,8 +24,10 @@ module.exports = function(grunt) {
                     jQuery: true,
                     console: true,
                     module: true,
-                    require: true
-                }
+                    require: true,
+                    __dirname: true
+                },
+                globalstrict: true
             }
         },
 

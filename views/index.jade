@@ -1,7 +1,16 @@
 doctype html
 
-h1 Welcome to Seven Wonders online
+html
 
-form#userName(action='/login')
-    input(type='text', placeholder='Enter a name', name='userName')
-    input(type='submit', value='Join Game')
+    head
+        title Seven Wonders
+
+    body
+        h1 Welcome to Seven Wonders online
+        p Enter a game name to join or create a new game
+        form#userName(action='/login')
+            input(type='text', placeholder='Enter a game name', name='gameName')
+            br
+            input(type='text', placeholder='Enter your name', name='userName')
+            br
+            input(type='submit', value='Join Game')
